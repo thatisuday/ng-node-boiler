@@ -1,0 +1,17 @@
+@import '_colors';
+@import '_fonts';
+
+// semantic-ui
+.button,
+input,
+select,
+textarea{
+	outline: none !important;
+	font-family: $font_body !important;
+	font-weight: 400 !important;
+}
+
+.button{
+	text-transform: uppercase !important;
+	border-radius: 0px  !important;
+}

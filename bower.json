@@ -1,0 +1,27 @@
+{
+  "name": "ng-node-boiler",
+  "homepage": "https://github.com/thatisuday/ng-node-boiler",
+  "authors": [
+    "Uday Hiwarale <uhiwarale@gmail.com>"
+  ],
+  "description": "AngularJS node boilerplate code",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.2",
+    "semantic": "semantic-ui#^2.2.6",
+    "ng-image-gallery": "^2.0.8",
+    "ui-stater": "^1.0.0",
+    "superslides": "^0.6.2",
+    "angular-animate": "^1.6.1",
+    "headroom.js": "https://unpkg.com/headroom.js/bower.zip",
+    "ngMeta": "^1.0.0"
+  }
+}

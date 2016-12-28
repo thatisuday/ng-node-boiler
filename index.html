@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="project">
+	<head>
+		<base href="/"/>
+		
+		<title ng-bind="ngMeta.title"></title>
+		<meta ng-bind="ngMeta.description" name="description" content="" />
+		<meta ng-bind="ngMeta.keywords" name="keywords" content="" />
+
+		<meta property="og:image" content="" />
+
+		<link rel="icon" href="/static/img/logos/favicon.ico"/>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+		<!-- dynamic dependencies -->
+		<link href="https://fonts.googleapis.com/css?family=Krona+One|Work+Sans:100,200,300,400,500,600,700,900" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+		<!-- core dependencies -->
+		<script src="/static/bower_components/angular/angular.min.js"></script>
+		<script src="/static/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="/static/bower_components/ui-stater/dist/ui-stater.min.js"></script>
+		<script src="/static/bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="/static/bower_components/ngMeta/dist/ngMeta.min.js"></script>
+		<script src="/static/bower_components/headroom.js/dist/headroom.min.js"></script>
+		<script src="/static/bower_components/headroom.js/dist/angular.headroom.min.js"></script>
+		<link rel="stylesheet" href="/static/bower_components/semantic/dist/semantic.min.css"/>
+
+		<!-- app dependencies -->
+		<script src="/static/js/dist/main.min.js"></script>
+		<link rel="stylesheet" href="/static/scss/dist/main.min.css"/>
+	</head>
+	
+	<body ng-class="{bootstrapped : bootstrapped}">
+		<!-- site header -->
+		<div class="_site_header"></div>
+
+		<!-- site drawer -->
+		<div class="_site_drawer"></div>
+
+		<!-- views -->
+		<ui-view ui-stater></ui-view>
+
+		<!-- site footer -->
+		<div class="_site_footer"></div>
+	</body>
+
+	<!-- Chrome page scroll remember : none -->
+	<script type="text/javascript">
+		if('scrollRestoration' in history){
+			history.scrollRestoration = 'manual';
+		}
+	</script>
+</html>

@@ -1,0 +1,22 @@
+@import '_colors';
+@import '_fonts';
+
+body,
+html{
+	font-size: 14px;
+	color: #111;
+	font-weight: 300;
+	font-family : $font_body;
+}
+
+body{
+	opacity: 0;
+
+	&.bootstrapped{
+		opacity: 1 !important;
+	}
+
+	>ui-view{
+		display: block;
+	}
+}
